@@ -1,3 +1,13 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@navigation/*": ["src/navigation/*"],
+      "@models/*": ["src/components/*"],
+      "@routes/*": ["src/routes/*"],
+      "@views/*": ["src/views/*"]
+    }
+  },
+  "extends": "@tsconfig/react-native/tsconfig.json"
 }
